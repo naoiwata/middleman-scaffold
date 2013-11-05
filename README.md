@@ -1,2 +1,0 @@
-middleman-scaffold
-==================
