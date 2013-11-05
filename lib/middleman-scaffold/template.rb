@@ -19,17 +19,19 @@ module Middleman
       end
 
       def build_scaffold
-        template 'shared/Gemfile.tt', File.join(location, 'Gemfile')
-        template 'shared/config.tt', File.join(location, 'config.rb')
+        template 'shared/Gemfile', File.join(location, 'Gemfile')
+        template 'shared/config.rb', File.join(location, 'config.rb')
         copy_file 'source/index.html.slim', File.join(location, 'source/index.html.slim')
         copy_file 'source/layouts/layout.slim', File.join(location, 'source/layouts/layout.slim')
+        copy_file 'source/layouts/_header.slim', File.join(location, 'source/layouts/_header.slim')
+        copy_file 'source/layouts/_footer.slim', File.join(location, 'source/layouts/_footer.slim')
 
         empty_directory File.join(location, 'source', options[:css_dir])
         copy_file 'source/css/all.css.sass', File.join(location, 'source', options[:css_dir], 'all.css.sass')
         copy_file 'source/css/normalize.css.sass', File.join(location, 'source', options[:css_dir], 'normalize.css.sass')
 
         empty_directory File.join(location, 'source', options[:js_dir])
-        copy_file 'source/js/all.js.coffee', File.join(location, 'source', options[:js_dir], 'all.js')
+        copy_file 'source/js/all.js.coffee', File.join(location, 'source', options[:js_dir], 'all.js.coffee')
 
         empty_directory File.join(location, 'source', options[:images_dir])
         copy_file 'source/img/background.png', File.join(location, 'source', options[:images_dir], 'background.png')
