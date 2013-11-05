@@ -1,4 +1,4 @@
-# Middleman::Scaffold
+# Middleman::Scaffold [![Gem Version](https://badge.fury.io/rb/middleman-scaffold.png)](http://badge.fury.io/rb/middleman-scaffold)
 
 `middleman-scaffold` is an extension for the [Middleman] static site generator that adds support for Slim, Sass, Coffeescript, Live-reload.
 
