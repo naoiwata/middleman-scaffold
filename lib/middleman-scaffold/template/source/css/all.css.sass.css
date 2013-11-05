@@ -1,0 +1,16 @@
+@charset "utf-8"
+
+body
+  background: #d4d4d4
+  text-align: center
+  font-family: sans-serif
+
+#wrap
+  width: 640px
+  margin : 0 auto
+
+.welcome
+  color: #777
+  a 
+    color: #777
+

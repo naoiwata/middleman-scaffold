@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in middleman-scaffold.gemspec
 gemspec
+gem "middleman-livereload", "~> 3.1.0"
+gem "middleman-deploy", "~> 0.1.2"
+gem "slim", "~> 2.0.2"
