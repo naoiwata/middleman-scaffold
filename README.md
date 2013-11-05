@@ -10,8 +10,6 @@ Add this line to your application's Gemfile:
     $ gem install middleman-scaffold 
     $ middleman init MY_PROJECT --template scaffold
 
-If you already have a Middleman project: Add `gem "middleman-scaffold"` to your `Gemfile` and run `bundle install`
-
 And then execute:
 
     $ cd MY_PROJECT
