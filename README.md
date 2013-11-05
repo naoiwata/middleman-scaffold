@@ -15,6 +15,21 @@ And then execute:
     $ cd MY_PROJECT
     $ bundle install --path vendor/bundle
 
+## Template file
+
+    └── source
+        ├── css
+        │   └── all.css.sass
+        │   └── reset.css.sass
+        ├── img
+        ├── js
+        │   └── all.js.coffee
+        └── layouts
+        │   ├── layout.slim
+        │   ├── _footer.slim
+        │   └── _header.slim
+        └────── index.html.slim
+
 ## Usage
     
     # run local server
