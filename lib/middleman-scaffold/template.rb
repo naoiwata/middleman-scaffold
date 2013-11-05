@@ -28,7 +28,7 @@ module Middleman
 
         empty_directory File.join(location, 'source', options[:css_dir])
         copy_file 'source/css/all.css.sass', File.join(location, 'source', options[:css_dir], 'all.css.sass')
-        copy_file 'source/css/normalize.css.sass', File.join(location, 'source', options[:css_dir], 'normalize.css.sass')
+        copy_file 'source/css/reset.css.sass', File.join(location, 'source', options[:css_dir], 'reset.css.sass')
 
         empty_directory File.join(location, 'source', options[:js_dir])
         copy_file 'source/js/all.js.coffee', File.join(location, 'source', options[:js_dir], 'all.js.coffee')
