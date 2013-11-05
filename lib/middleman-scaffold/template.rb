@@ -25,11 +25,11 @@ module Middleman
         copy_file 'source/layouts/layout.slim', File.join(location, 'source/layouts/layout.slim')
 
         empty_directory File.join(location, 'source', options[:css_dir])
-        copy_file 'source/stylesheets/all.css.sass', File.join(location, 'source', options[:css_dir], 'all.css')
-        copy_file 'source/stylesheets/normalize.css.sass', File.join(location, 'source', options[:css_dir], 'normalize.css')
+        copy_file 'source/css/all.css.sass', File.join(location, 'source', options[:css_dir], 'all.css.sass')
+        copy_file 'source/css/normalize.css.sass', File.join(location, 'source', options[:css_dir], 'normalize.css.sass')
 
         empty_directory File.join(location, 'source', options[:js_dir])
-        copy_file 'source/javascripts/all.js.coffee', File.join(location, 'source', options[:js_dir], 'all.js')
+        copy_file 'source/js/all.js.coffee', File.join(location, 'source', options[:js_dir], 'all.js')
 
         empty_directory File.join(location, 'source', options[:images_dir])
         copy_file 'source/img/background.png', File.join(location, 'source', options[:images_dir], 'background.png')
@@ -39,12 +39,12 @@ module Middleman
 
       private
       def replace_css_img_dir
-        f = File.open(File.join(location, 'source', options[:css_dir], 'all.css'), 'r')
+        f = File.open(File.join(location, 'source', options[:css_dir], 'all.css.sass'), 'r')
         buf = f.read
         buf.gsub!(/IMG_DIR/, options[:images_dir])
         f.close
 
-        f = File.open(File.join(location, 'source', options[:css_dir], 'all.css'), 'w')
+        f = File.open(File.join(location, 'source', options[:css_dir], 'all.css.sass'), 'w')
         f.write(buf)
         f.close
       end
@@ -52,4 +52,4 @@ module Middleman
   end
 end
 
-Middleman::Templates.register :slim, Middleman::Scaffold::Template
+Middleman::Templates.register :scaffold, Middleman::Scaffold::Template
