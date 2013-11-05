@@ -1,10 +1,10 @@
 # Middleman-Scaffold [![Gem Version](https://badge.fury.io/rb/middleman-scaffold.png)](http://badge.fury.io/rb/middleman-scaffold)
 
-`middleman-scaffold` is an extension for the [Middleman] static site generator that adds support for Slim, Sass, Coffeescript, Live-reload.
+`middleman-scaffold` is an extension for the [Middleman] static site generator that adds support for Slim, Sass, Coffeescript. and includes Live-reload, deploy modules.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+You will have access to the middleman command with generating scaffold.  From the terminal:
 
     $ gem install middleman 
     $ gem install middleman-scaffold 
