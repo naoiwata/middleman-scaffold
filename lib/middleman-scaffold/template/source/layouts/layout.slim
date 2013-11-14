@@ -1,4 +1,4 @@
-doctype html
+doctype 5
 html
   head
     meta charset="utf-8"
@@ -8,12 +8,18 @@ html
     meta type="keyword" content=""
     meta type="description" content=""
     /![if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>[endif]
-
-    == stylesheet_link_tag "reset", "all"
+    == stylesheet_link_tag "all"
     == javascript_include_tag "all"
-
+    meta property="og:title" content=""
+    meta property="og:type" content="website"
+    meta property="og:description" content=""
+    meta property="og:url" content=""
+    meta property="og:image" content=""
+    meta property="og:site_name" content=""
+    meta property="og:locale" content="ja_JP"
+    meta property="fb:app_id" content=""
   body class="#{page_classes}"
     #wrap
-        == partial 'layouts/header'
-        == yield
-        == partial 'layouts/footer'
+      == partial 'layouts/header'
+      == yield
+      == partial 'layouts/footer'

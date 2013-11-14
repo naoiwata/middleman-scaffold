@@ -25,6 +25,9 @@ Slim::Engine.set_default_options :shortcut => {
   '&' => {:tag => 'input', :attr => 'type'}
 }
 
+# bower.js settings
+# set :bower_dir, '../vendor/bower'
+
 # Per-page layout changes:
 #
 # With no layout
