@@ -26,7 +26,7 @@ Slim::Engine.set_default_options :shortcut => {
 }
 
 # bower.js settings
-# set :bower_dir, '../vendor/bower'
+set :bower_dir, '../vendor/bower'
 
 # Per-page layout changes:
 #

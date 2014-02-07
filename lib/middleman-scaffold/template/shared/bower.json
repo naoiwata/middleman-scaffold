@@ -1,0 +1,17 @@
+{
+  "name": "project_name",
+  "version": "0.0.0",
+  "dependencies": {
+    "easeljs": "*",
+    "createjs-tweenjs": "*",
+    "createjs-preloadjs": "*",
+    "dat.gui": "*",
+    "greensock": "*",
+    "lodash": "*",
+    "backbone": "*",
+    "jquery.transit": "*",
+    "d3": "*",
+    "raphael": "*",
+    "jquery": "*"
+  }
+}
