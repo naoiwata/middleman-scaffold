@@ -40,3 +40,9 @@ And then execute:
     
     # deploy build html
     $ bundle exec middleman deploy
+
+## ChangeLog
+
+*v0.0.1*
+
+   - Enable bower
