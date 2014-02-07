@@ -21,6 +21,8 @@ module Middleman
       def build_scaffold
         template 'shared/Gemfile', File.join(location, 'Gemfile')
         template 'shared/config.rb', File.join(location, 'config.rb')
+        copy_file 'shared/bower.json', File.join(location, 'bower.json')
+        copy_file 'shared/.bowerrc', File.join(location, '.bowerrc')
         copy_file 'source/index.html.slim', File.join(location, 'source/index.html.slim')
         copy_file 'source/layouts/layout.slim', File.join(location, 'source/layouts/layout.slim')
         copy_file 'source/layouts/_header.slim', File.join(location, 'source/layouts/_header.slim')
